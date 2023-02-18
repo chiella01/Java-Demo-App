@@ -1,6 +1,9 @@
 #!/usr/bin/env groovy
 pipeline {
     agent any
+    tools {
+        'maven-3.6'
+    }
     stages {
         stage ("building app") {
             steps {
