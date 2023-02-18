@@ -1,6 +1,6 @@
 #!/usr/bin/env groovy
 pipeline {
-    agent any {
+    agent any 
         tools {
             maven "maven-3.6"
         }
@@ -15,4 +15,3 @@ pipeline {
             }
         }
     }
-}
