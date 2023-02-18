@@ -5,7 +5,7 @@ pipeline {
         'maven-3.6'
     }
     stages {
-        stage ("building app") {
+        stage ("build app") {
             steps {
                 script {
                     echo "building the applicaiton"
