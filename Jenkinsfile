@@ -2,7 +2,7 @@
 pipeline {
     agent any
     stages {
-        stage ("build app") {
+        stage ("building app") {
             steps {
                 script {
                     echo "building the applicaiton"
