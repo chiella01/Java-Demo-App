@@ -28,5 +28,14 @@ pipeline {
                     }
                 }
             }
+            stage("provision server") {
+                steps {
+                    script {
+                        dir('terraform') {
+                            sh "terraform init"
+                        }
+                    }
+                }
+            }
         }
     }
