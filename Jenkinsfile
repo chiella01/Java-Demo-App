@@ -46,7 +46,7 @@ pipeline {
                     }
                 }
             }
-            stage(deploy stage) {
+            stage("deploy stage") {
                 environment {
                     DOCKER_CREDS = credentials('docker-hub-credentials')
                 }
