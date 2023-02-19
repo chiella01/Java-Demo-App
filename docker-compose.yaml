@@ -1,0 +1,12 @@
+version: '3.3'
+services:
+  java-maven-app:
+    image: bemnji/demo-app:java-maven-app-2.0
+    port:
+      - 8080:8080
+  postgres:
+    image: postgres:13
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRES_PASSWORD=my-pwd
